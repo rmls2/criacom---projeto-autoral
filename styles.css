@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('caminho/para/imagem-de-fundo.jpg'); /* Substitua pelo caminho real da sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #070707;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(32, 4, 54);
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+hr {
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.gallery-item {
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+.image-container {
+  position: relative;
+}
+
+img {
+  max-width: 30%; /* Ajuste conforme necessário */
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.caption {
+  position: absolute;
+  top:  20px; 
+  left: 80px;
+  right: 0;
+  bottom: 0;
+  width: calc(30% - 200px); /* Largura da imagem menos 200 pixels para dar o espaçamento desejado */
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo da legenda com transparência */
+  color: #fff;
+  padding: 50px;
+  text-align: justify;
+  margin: 0;
+  font-size: 20px; /* Ajuste conforme necessário */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  
+}
+
+.text-box {
+  position: absolute;
+  top: 0;
+  left: calc(30% + 10px); /* Adicionando 10 pixels de margem entre a imagem e a caixa de texto */
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo da caixa de texto com transparência */
+  color: #fff;
+  padding: 20px;
+  text-align: justify;
+  font-size: 18px; /* Ajuste conforme necessário */
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
