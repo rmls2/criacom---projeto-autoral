@@ -84,3 +84,11 @@ img {
   font-size: 18px; /* Ajuste conforme necessário */
   line-height: 1.5; /* Espaçamento entre linhas */
 }
+
+.video-container {
+  margin: 40px;
+}
+
+.video-container video {
+  max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
+}
